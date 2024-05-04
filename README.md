@@ -22,7 +22,7 @@ pod 'InfinitScrollView'
 
 ## Author
 
-xiangyu-sun, xiangyu.sun@glovoapp.com
+xiangyu-sun, luc.alexander.sun@icloud.com
 
 ## License
 

@@ -1,0 +1,16 @@
+PODS:
+  - InfinitScrollView (0.1.0)
+
+DEPENDENCIES:
+  - InfinitScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  InfinitScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InfinitScrollView: 25dc7d4af3be5ca5125bbe1ba14d8fae883b5fea
+
+PODFILE CHECKSUM: 62b340453e663c2c8e318025407ea7031ce19abd
+
+COCOAPODS: 1.15.2

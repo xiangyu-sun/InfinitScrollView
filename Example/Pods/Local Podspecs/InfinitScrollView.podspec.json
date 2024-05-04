@@ -1,0 +1,22 @@
+{
+  "name": "InfinitScrollView",
+  "version": "0.1.0",
+  "summary": "A short description of InfinitScrollView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xiangyu-sun/InfinitScrollView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xiangyu-sun": "xiangyu.sun@glovoapp.com"
+  },
+  "source": {
+    "git": "https://github.com/xiangyu-sun/InfinitScrollView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "InfinitScrollView/Classes/**/*"
+}
