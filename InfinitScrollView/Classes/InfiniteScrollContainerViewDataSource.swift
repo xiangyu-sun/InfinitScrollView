@@ -1,24 +1,24 @@
 import Combine
 
-final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtocol, ImageData>:
+public final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtocol, ImageData>:
   InfiniteScrollContainerViewDataSourceProtocol {
 
-  typealias ContentUpdateHandler = (ContentView, ImageData, Int) -> Void
+  public typealias ContentUpdateHandler = (ContentView, ImageData, Int) -> Void
 
   // MARK: Properties
 
-  var scrollEnabled: Bool {
+  public var scrollEnabled: Bool {
     self.imageData.count > 1
   }
 
-  var currentContentIndex: AnyPublisher<Int, Never> {
+  public var currentContentIndex: AnyPublisher<Int, Never> {
     self.currentIndex
       .removeDuplicates()
       .compactMap({ $0 })
       .eraseToAnyPublisher()
   }
 
-  var didTapContentAtIndex: AnyPublisher<ImageViewTappedData<ImageData>, Never> {
+  public var didTapContentAtIndex: AnyPublisher<ImageViewTappedData<ImageData>, Never> {
     self.didTapContentAtIndexSubject
       .compactMap { [weak self] index in
         guard let self = self else { return nil }
@@ -38,14 +38,14 @@ final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtoc
 
 
   let viewBuilder: (Int) -> ContentView
-  let contentViewUpdator: ContentUpdateHandler
-  let mode: InfiniteScrollContainerViewMode
+  public let contentViewUpdator: ContentUpdateHandler
+  public let mode: InfiniteScrollContainerViewMode
   
   private var cancellables = Set<AnyCancellable>()
 
   // MARK: Initializers
 
-  init(
+  public init(
     imageData: [ImageData],
     viewBuilder: @escaping (Int) -> ContentView,
     contentViewUpdator: @escaping ContentUpdateHandler
@@ -60,7 +60,7 @@ final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtoc
 
   // MARK: Methods
 
-  func convertCacheIndexToImageIndex(cachedViewIndex: Int) -> Int? {
+  public func convertCacheIndexToImageIndex(cachedViewIndex: Int) -> Int? {
     if cachedViewIndex < 1 {
       var backwardIterator = self.backwardIterator
       return backwardIterator.next()
@@ -72,15 +72,15 @@ final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtoc
     }
   }
 
-  func makeContentViews() -> [ContentView] {
+  public func makeContentViews() -> [ContentView] {
     (0 ..< self.mode.cacheSize).map(self.viewBuilder)
   }
 
-  func cachedImageAtIndex(_ index: Int) -> ImageData {
+  public func cachedImageAtIndex(_ index: Int) -> ImageData {
     return self.images[index]
   }
 
-  func bindTappedImageAtIndex(signal: AnyPublisher<Int, Never>) {
+  public func bindTappedImageAtIndex(signal: AnyPublisher<Int, Never>) {
     signal
       .compactMap { [weak self] cachedViewIndex -> Int? in
         self?.convertCacheIndexToImageIndex(cachedViewIndex: cachedViewIndex)
@@ -89,7 +89,7 @@ final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtoc
       .store(in: &cancellables)
   }
 
-  func moveToNextPage() {
+  public func moveToNextPage() {
     guard self.mode.hasMultiplePages else { return }
 
     guard let currentIndex = self.currentIndex.value else {
@@ -105,7 +105,7 @@ final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtoc
     )
   }
 
-  func moveToPreviousPage() {
+  public func moveToPreviousPage() {
     guard self.mode.hasMultiplePages else { return }
 
     guard let currentIndex = self.currentIndex.value else {
@@ -121,7 +121,7 @@ final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtoc
     )
   }
 
-  func loadPageAt(index: Int) {
+  public func loadPageAt(index: Int) {
     guard self.imageData.indices.contains(index) else {
       return
     }
