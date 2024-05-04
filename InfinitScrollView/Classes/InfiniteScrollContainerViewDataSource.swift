@@ -1,14 +1,8 @@
 import Combine
 
-final class InfiniteScrollContainerViewDataSource<C: ContentViewProtocol, I>:
+final class InfiniteScrollContainerViewDataSource<ContentView: ContentViewProtocol, ImageData>:
   InfiniteScrollContainerViewDataSourceProtocol {
 
-
-  typealias ImageData = I
-  
-  typealias ContentView = C
-  
-  
   typealias ContentUpdateHandler = (ContentView, ImageData, Int) -> Void
 
   // MARK: Properties
