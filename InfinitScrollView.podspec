@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InfinitScrollView'
-  s.version          = '0.1.0'
+  s.version          = '0.0.3'
   s.summary          = 'A UIKit lib that allow infinite scrolll apun a finite data source'
 
 # This description is used to generate tags and improve search results.
