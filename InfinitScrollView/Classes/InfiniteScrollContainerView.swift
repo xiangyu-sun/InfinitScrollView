@@ -125,7 +125,11 @@ final class InfiniteScrollContainerView<DataSource: InfiniteScrollContainerViewD
     self.dataSource.loadPageAt(index: atIndex)
     self.layoutImages()
   }
-
+  
+  @objc
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    updateScrollViewOffset(scrollView: scrollView, offset: scrollView.contentOffset)
+  }
 }
 
 // MARK: - subview rearrangement and offset updating
@@ -195,9 +199,5 @@ private extension InfiniteScrollContainerView {
 
       self.dataSource.contentViewUpdator(contentView, imageData, originImageIndex)
     }
-  }
-  
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    updateScrollViewOffset(scrollView: scrollView, offset: scrollView.contentOffset)
   }
 }
