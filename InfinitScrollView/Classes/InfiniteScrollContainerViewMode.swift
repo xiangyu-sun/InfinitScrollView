@@ -1,4 +1,4 @@
-enum InfiniteScrollContainerViewMode {
+public enum InfiniteScrollContainerViewMode {
   case singleImageNoScrollable
   case infiniteScroll
 

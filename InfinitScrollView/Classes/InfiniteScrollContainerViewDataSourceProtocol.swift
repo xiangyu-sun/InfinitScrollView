@@ -1,16 +1,20 @@
 import Combine
 
-
-protocol ContentViewProtocol: UIView {
+public protocol ContentViewProtocol: UIView {
   var didTap: AnyPublisher<Void, Never> { get }
 }
 
-struct ImageViewTappedData<ImageData> {
+public struct ImageViewTappedData<ImageData> {
+  public init(index: Int, productImageData: [ImageData]) {
+    self.index = index
+    self.productImageData = productImageData
+  }
+  
   let index: Int
   let productImageData: [ImageData]
 }
 
-protocol InfiniteScrollContainerViewDataSourceProtocol: AnyObject {
+public protocol InfiniteScrollContainerViewDataSourceProtocol: AnyObject {
 
   associatedtype ImageData
   associatedtype ContentView: ContentViewProtocol

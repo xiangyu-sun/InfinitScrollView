@@ -7,9 +7,15 @@ private enum Constants {
   static let movingBackwardThreshhold = 0.5
 }
 
-final class InfiniteScrollContainerView<DataSource: InfiniteScrollContainerViewDataSourceProtocol>: UIView, UIScrollViewDelegate {
+public final class InfiniteScrollContainerView<DataSource: InfiniteScrollContainerViewDataSourceProtocol>: UIView, UIScrollViewDelegate {
 
-  struct Configuration {
+  public struct Configuration {
+    public init(shouldHideForwardAndBackwardButton: Bool, forwardImage: UIImage, backwardImage: UIImage) {
+      self.shouldHideForwardAndBackwardButton = shouldHideForwardAndBackwardButton
+      self.forwardImage = forwardImage
+      self.backwardImage = backwardImage
+    }
+    
     let shouldHideForwardAndBackwardButton: Bool
     let forwardImage: UIImage
     let backwardImage: UIImage
@@ -27,7 +33,7 @@ final class InfiniteScrollContainerView<DataSource: InfiniteScrollContainerViewD
 
   // MARK: Initializers
 
-  init(dataSource: DataSource, configuration: Configuration) {
+  public init(dataSource: DataSource, configuration: Configuration) {
     self.dataSource = dataSource
     self.configuration = configuration
 
@@ -90,7 +96,7 @@ final class InfiniteScrollContainerView<DataSource: InfiniteScrollContainerViewD
     fatalError("init(coder:) has not been implemented")
   }
 
-  override func layoutSubviews() {
+  public override func layoutSubviews() {
     super.layoutSubviews()
     self.layoutImages()
 
@@ -127,7 +133,7 @@ final class InfiniteScrollContainerView<DataSource: InfiniteScrollContainerViewD
   }
   
   @objc
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+  public func scrollViewDidScroll(_ scrollView: UIScrollView) {
     updateScrollViewOffset(scrollView: scrollView, offset: scrollView.contentOffset)
   }
 }
