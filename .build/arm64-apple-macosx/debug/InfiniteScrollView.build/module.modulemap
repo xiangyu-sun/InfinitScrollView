@@ -1,0 +1,4 @@
+module InfiniteScrollView {
+    header "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollView-Swift.h"
+    requires objc
+}

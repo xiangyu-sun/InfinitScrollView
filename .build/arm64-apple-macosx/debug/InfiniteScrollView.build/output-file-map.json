@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/master.swiftdeps"
+  },
+  "/Users/xiangyu.sun/InfinitScrollView/InfinitScrollView/Classes/InfiniteRangeSequence.swift": {
+    "dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteRangeSequence.d",
+    "object": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteRangeSequence.swift.o",
+    "swiftmodule": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteRangeSequence~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteRangeSequence.swiftdeps"
+  },
+  "/Users/xiangyu.sun/InfinitScrollView/InfinitScrollView/Classes/InfiniteScrollContainerView.swift": {
+    "dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerView.d",
+    "object": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerView.swift.o",
+    "swiftmodule": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerView~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerView.swiftdeps"
+  },
+  "/Users/xiangyu.sun/InfinitScrollView/InfinitScrollView/Classes/InfiniteScrollContainerViewDataSource.swift": {
+    "dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSource.d",
+    "object": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSource.swift.o",
+    "swiftmodule": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSource~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSource.swiftdeps"
+  },
+  "/Users/xiangyu.sun/InfinitScrollView/InfinitScrollView/Classes/InfiniteScrollContainerViewDataSourceProtocol.swift": {
+    "dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSourceProtocol.d",
+    "object": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSourceProtocol.swift.o",
+    "swiftmodule": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSourceProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewDataSourceProtocol.swiftdeps"
+  },
+  "/Users/xiangyu.sun/InfinitScrollView/InfinitScrollView/Classes/InfiniteScrollContainerViewMode.swift": {
+    "dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewMode.d",
+    "object": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewMode.swift.o",
+    "swiftmodule": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewMode~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollView.build/InfiniteScrollContainerViewMode.swiftdeps"
+  }
+}

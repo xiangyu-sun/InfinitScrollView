@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollViewTests.build/master.swiftdeps"
+  },
+  "/Users/xiangyu.sun/InfinitScrollView/Tests/InfiniteScrollViewTests/InfiniteScrollViewTests.swift": {
+    "dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollViewTests.build/InfiniteScrollViewTests.d",
+    "object": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollViewTests.build/InfiniteScrollViewTests.swift.o",
+    "swiftmodule": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollViewTests.build/InfiniteScrollViewTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/xiangyu.sun/InfinitScrollView/.build/arm64-apple-macosx/debug/InfiniteScrollViewTests.build/InfiniteScrollViewTests.swiftdeps"
+  }
+}
